@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <img src="./img/first.jpg" id="first" alt="">
+        <img src="./img/last.png" id="last" alt="">
+        <h1 id="text">Parallax</h1>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Photography</h2>
+            <p>As a Freelance Designer & Developer, I am here to make you stand out in the digital world and my passion for design and your vision will ensure a great end result.</p>
+        </div>
+        <div class="container">
+            <div class="box box1">
+                <div class="in">
+                    <p>Lake</p>
+                </div>
+                </div>
+                <div class="box box2">
+                    <div class="in">
+                        <p>Road</p>
+                    </div>
+                    </div>
+                    <div class="box box3">
+                        <div class="in">
+                            <p>Mountain</p>
+                        </div>
+                        </div>
+                        <div class="box box4">
+                            <div class="in">
+                                <p>Sunset</p>
+                            </div>
+                            </div>
+
+        </div>
+        <div class="bottom">
+            <p>©️ 2024. Design with by shibil.</p>
+        </div>
+    </div>
+
+
+    <script>
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            first.style.top = value *0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+    
+</body>
+</html>
